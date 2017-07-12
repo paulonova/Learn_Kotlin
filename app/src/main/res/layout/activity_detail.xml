@@ -4,16 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="se.kotlin.photoapp.MainActivity">
+    tools:context="se.kotlin.photoapp.DetailActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.AppBarOverlay"
-        android:id="@+id/appBarLayout2">
+        android:id="@+id/appBarLayout">
 
         <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
+            android:id="@+id/toolbar2"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
@@ -21,15 +21,10 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <!--<include layout="@layout/content_main" />-->
-
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recyclerView"
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/appBarLayout2">
-
-    </android.support.v7.widget.RecyclerView>
+        android:layout_height="match_parent" />
 
 
 </RelativeLayout>
