@@ -5,7 +5,6 @@ import android.support.design.widget.FloatingActionButton
 import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.Toolbar
-import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 
@@ -45,48 +44,5 @@ class MainActivity : AppCompatActivity() {
 
         return super.onOptionsItemSelected(item)
     }
-
-
-
-
-    /**
-     * Fun, strLenght name string question mark and this is
-     * going to return and int and we'll just return name if it isn't null,
-     * length, otherwise, we'll return negative one, using the elvis operator.
-     */
-    inline fun strLength(name : String?) : Int{
-        return name?.length ?: -1;
-    }
-
-    fun kotlinTest(){
-        var userName = "Fred";
-        userName = "Sue";
-        val name  = 14.7;
-
-        var name2 : String? = null;
-        var length = name2?.length;
-//        name2 = null;
-        val length2 = name2?.length ?: -10
-
-        Log.d("Hello", "" + userName + " and " + name);
-        Log.d("Hello", "Length: " + length2);
-
-        val teste : Int? = null;
-        /**
-         * if teste? = null then return -100*/
-        val size = teste?.plus(10) ?: -100;
-        Log.d("Hello", "Size: " + size);
-
-        /**
-         * The double exclamation operator will evaluate the variable even if it is null,
-         * causing a null pointer exception. For example, val length three equals name
-         * two double exclamation point dot length will cause a null pointer exception
-         * if name two is null.
-         */
-//        val length3 = name2!!.length;
-
-
-    }
-
 
 }
